@@ -45,12 +45,12 @@ The value may contain curly placeholders for variable parts.
 
 ## Using the class
 
-**Require the i18n Class**
+**First, require the i18n Class**
 ```php
 <?php
 require 'src/i18n.class.php';
 ```
-**Define your language and create your i18n objects**
+**Then define your language and create your i18n objects**
 ```php
 <?php
 $lang = 'en';
@@ -90,7 +90,7 @@ echo $u->pl('totaladmins', $nbAdmins);
 
 ## More examples
 
-Feel free to [download the zip file](https://github.com/damsmcfly/php-i18n-class/archive/master.zip) or [open the index.php file](https://github.com/damsmcfly/php-i18n-class/blob/master/index.php).
+Feel free to [download the zip file](https://github.com/damsmcfly/php-i18n-class/archive/master.zip) or [open the index.php file](https://github.com/damsmcfly/php-i18n-class/blob/master/index.php) for more examples.
 
 ## Inspiration
 
