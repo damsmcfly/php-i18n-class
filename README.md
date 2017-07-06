@@ -61,6 +61,12 @@ $u = new i18n($lang, "user/getList");   // $u : translations of the User List
 **Get the translated version of your phrase from its key using getPhrase**
 ```php
 <?php
+echo $l->getPhrase('welcomemsg');  // Get translated phrase
+echo $l->ph('welcomemsg');         // Alias for getPhrase
+
+// will print : 'Welcome to our website'
+
+
 // The dot syntax helps you reach the JSON child node easily, if needed.
 echo $l->getPhrase('menu.home');   // Get translated phrase
 echo $l->ph('menu.home');          // Alias for getPhrase
