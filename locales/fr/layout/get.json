@@ -1,0 +1,12 @@
+{
+	"welcomemsg": "Bienvenue sur notre site",
+    "menu": {
+        "home": "Accueil",
+        "users": "Utilisateurs"
+    },
+    "footer": {
+        "privacypolicy": "Données personnelles",
+        "contact": "Contact",
+        "backtotop": "Retour en haut"
+    }
+}
