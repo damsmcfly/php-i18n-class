@@ -54,8 +54,8 @@ require 'src/i18n.class.php';
 ```php
 <?php
 $lang = 'en';
-$l = new i18n($lang, "layout/get");     // $l : translations of the Layout
-$u = new i18n($lang, "user/getList");   // $u : translations of the User List
+$l = new i18n($lang, "layout/get");     // $l : translations from locales/en/layout/get.json
+$u = new i18n($lang, "user/getList");   // $u : translations from locales/en/user/getList.json
 ```
 
 **getPhrase : Get the translation of your phrase from its key**
