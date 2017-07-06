@@ -3,7 +3,7 @@
 // Require the i18n Class
 require 'src/i18n.class.php';
 
-// Defining the language
+// Define the language
 // For the example, we change the language using a GET parameter
 $langList = array('en', 'fr');
 if(isset($_GET['lang']) && in_array($_GET['lang'], $langList))
