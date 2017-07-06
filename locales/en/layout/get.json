@@ -1,0 +1,12 @@
+{
+	"welcomemsg": "Welcome to our website",
+    "menu": {
+        "home": "Home",
+        "users": "Users"
+    },
+    "footer": {
+        "privacypolicy": "Privacy policy",
+        "contact": "Contact",
+        "backtotop": "Back to top"
+    }
+}
