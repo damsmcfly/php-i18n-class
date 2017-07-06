@@ -2,7 +2,7 @@
 
 A simple PHP class to help you easily translate your website from JSON files.
 
-You can define 2 versions of the same phrase : a singular version, and a plural version.
+You can define 2 translations of the same phrase : a singular version, and a plural version.
 
 ## Translation files
 
@@ -58,36 +58,32 @@ $l = new i18n($lang, "layout/get");     // $l : translations of the Layout
 $u = new i18n($lang, "user/getList");   // $u : translations of the User List
 ```
 
-**Get the translated version of your phrase from its key using getPhrase**
+**getPhrase : Get the translation of your phrase from its key**
 ```php
 <?php
-echo $l->getPhrase('welcomemsg');  // Get translated phrase
+echo $l->getPhrase('welcomemsg');  // Get translation
 echo $l->ph('welcomemsg');         // Alias for getPhrase
-
 // will print : 'Welcome to our website'
 
 
 // The dot syntax helps you reach the JSON child node easily, if needed.
-echo $l->getPhrase('menu.home');   // Get translated phrase
+echo $l->getPhrase('menu.home');   // Get translation
 echo $l->ph('menu.home');          // Alias for getPhrase
-
 // will both print : 'Homepage';
 ```
 
-**Get the pluralized translated version of your phrase from its key using getPlural**
+**getPlural : Get the pluralized translation of your phrase from its key**
 ```php
 <?php
 $nbUsers = 666;
-echo $u->getPlural('totalusers', $nbUsers);    	// Get pluralized translated phrase
-echo $u->pl('totalusers', $nbUsers);    	// Alias for getPlural
-
+echo $u->getPlural('totalusers', $nbUsers);   // Get pluralized translation
+echo $u->pl('totalusers', $nbUsers);          // Alias for getPlural
 // will both print : 'There are 666 users in the database.';
 
 
 $nbAdmins = 1;
-echo $u->getPlural('totaladmins', $nbAdmins);   // Get pluralized translated phrase
+echo $u->getPlural('totaladmins', $nbAdmins);   // Get pluralized translation
 echo $u->pl('totaladmins', $nbAdmins);    	// Alias for getPlural
-
 // will both print : 'There is 1 admin in the database.';
 ```
 
