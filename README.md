@@ -64,10 +64,11 @@ $u = new i18n($lang, "user/getList");   // $u : translations of the User List
 echo $l->getPhrase('welcomemsg');  // Get translation
 echo $l->ph('welcomemsg');         // Alias for getPhrase
 // will print : 'Welcome to our website'
+```
 
-
-// The dot syntax helps you reach the JSON child node easily, if needed.
-echo $l->getPhrase('menu.home');   // Get translation
+The dot syntax helps you reach the JSON child node easily, if needed.
+```php
+<?php
 echo $l->ph('menu.home');          // Alias for getPhrase
 // will both print : 'Homepage';
 ```
