@@ -1,4 +1,5 @@
 <?php
+
 // Require the i18n Class
 require 'src/i18n.class.php';
 
@@ -15,12 +16,13 @@ $nbUsers = 666;
 $nbAdmins = 1;
 
 // $l : New i18n object for the Layout Translation
-// $u : New i18n object for the User List page Translation
 $l = new i18n($lang, "layout/get");
 //echo '<pre>';print_r($l);echo'</pre>';
 
+// $u : New i18n object for the User List page Translation
 $u = new i18n($lang, "user/getList");
 //echo '<pre>';print_r($u);echo'</pre>';
+
 ?>
 
 <html>
