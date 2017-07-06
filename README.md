@@ -58,28 +58,28 @@ $l = new i18n($lang, "layout/get");     // $l : translations of the Layout
 $u = new i18n($lang, "user/getList");   // $u : translations of the User List
 ```
 
-**Get the translated version of your phrase with getPhrase**
+**Get the translated version of your phrase from its key using getPhrase**
 ```php
 <?php
 // The dot syntax helps you reach the JSON child node easily, if needed.
-echo $l->getPhrase('menu.home');        // Get translated phrase from key
-echo $l->ph('menu.home');               // Alias for getPhrase
+echo $l->getPhrase('menu.home');   // Get translated phrase
+echo $l->ph('menu.home');          // Alias for getPhrase
 
 // will both print : 'Homepage';
 ```
 
-**Get the pluralized translated version of your phrase with getPlural**
+**Get the pluralized translated version of your phrase from its key using getPlural**
 ```php
 <?php
-$nbUsers    = 666;
-echo $u->getPlural('totalusers', $nbUsers);    	// Get pluralized translated phrase from key
+$nbUsers = 666;
+echo $u->getPlural('totalusers', $nbUsers);    	// Get pluralized translated phrase
 echo $u->pl('totalusers', $nbUsers);    	// Alias for getPlural
 
 // will both print : 'There are 666 users in the database.';
 
 
-$nbAdmins   = 1;
-echo $u->getPlural('totaladmins', $nbAdmins);   // Get pluralized translated phrase from key
+$nbAdmins = 1;
+echo $u->getPlural('totaladmins', $nbAdmins);   // Get pluralized translated phrase
 echo $u->pl('totaladmins', $nbAdmins);    	// Alias for getPlural
 
 // will both print : 'There is 1 admin in the database.';
