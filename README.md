@@ -49,11 +49,9 @@ The value may contain curly placeholders for variable parts.
 ```
 require 'src/i18n.class.php';
 ```
-2 - Define your language (and some other optional variables for the example)
+2 - Define your language
 ```
-$lang       = 'en';
-$nbUsers    = 666;
-$nbAdmins   = 1;
+$lang = 'en';
 ```
 
 3 - Declare your i18n objects
@@ -73,12 +71,14 @@ echo $l->ph('menu.home');               // Alias for getPhrase
 
 4 - Get the pluralized translated version of your phrase with getPlural
 ```
+$nbUsers    = 666;
 echo $u->getPlural('totalusers', $nbUsers);    	// Get pluralized translated phrase from key
 echo $u->pl('totalusers', $nbUsers);    	// Alias for getPlural
 
 // will both print : 'There are 666 users in the database.';
 
 
+$nbAdmins   = 1;
 echo $u->getPlural('totaladmins', $nbAdmins);   // Get pluralized translated phrase from key
 echo $u->pl('totaladmins', $nbAdmins);    	// Alias for getPlural
 
