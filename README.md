@@ -58,7 +58,7 @@ $u = new i18n($lang, "user/getList");   // $u : translations of the User List
 
 **Get the translated version of your phrase with getPhrase**
 ```
-// The dot syntax helps you reach the child of your json parent element.
+// The dot syntax helps you reach the JSON child node easily, if needed.
 echo $l->getPhrase('menu.home');        // Get translated phrase from key
 echo $l->ph('menu.home');               // Alias for getPhrase
 
