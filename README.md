@@ -49,7 +49,7 @@ The value may contain curly placeholders for variable parts.
 ```
 require 'src/i18n.class.php';
 ```
-2 - Define your language (and other optional variables)
+2 - Define your language (and some other optional variables for the example)
 ```
 $lang       = 'en';
 $nbUsers    = 666;
