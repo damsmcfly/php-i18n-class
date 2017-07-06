@@ -2,13 +2,13 @@
 // Require the i18n Class
 require 'src/i18n.class.php';
 
-// Defining default language
-$lang = 'en';
-
-// Switch the language with a GET parameter, for the example
+// Defining the language
+// For the example, we change the language using a GET parameter
 $langList = array('en', 'fr');
 if(isset($_GET['lang']) && in_array($_GET['lang'], $langList))
-	$lang = $_GET['lang'];
+    $lang = $_GET['lang'];
+else 
+    $lang = 'en';
 
 // Define some varialbles for the getPlural (pl) method example
 $nbUsers = 666;
