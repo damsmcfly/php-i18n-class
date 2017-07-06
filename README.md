@@ -74,13 +74,13 @@ echo $l->ph('menu.home');               // Alias for getPhrase
 4 - Get the pluralized translated version of your phrase with getPlural
 ```
 echo $u->getPlural('totalusers', $nbUsers);    	// Get pluralized translated phrase from key
-echo $u->pl('totalusers', $nbUsers);    		// Alias for getPlural
+echo $u->pl('totalusers', $nbUsers);    	// Alias for getPlural
 
 // will both print : 'There are 666 users in the database.';
 
 
 echo $u->getPlural('totaladmins', $nbAdmins);   // Get pluralized translated phrase from key
-echo $u->pl('totaladmins', $nbAdmins);    		// Alias for getPlural
+echo $u->pl('totaladmins', $nbAdmins);    	// Alias for getPlural
 
 // will both print : 'There is 1 admin in the database.';
 ```
