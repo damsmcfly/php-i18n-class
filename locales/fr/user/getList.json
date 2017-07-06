@@ -1,0 +1,11 @@
+{
+	"title": "Liste des utilisateurs",
+	"totalusers": {
+		"sing" : "Il y a {0} utilisateur dans la base de données.",
+		"plur" : "Il y a {0} utilisateurs dans la base de données."
+	},
+	"totaladmins": {
+		"sing" : "Il y a {0} administrateur dans la base de données.",
+		"plur" : "Il y a {0} administrateurs dans la base de données."
+	}
+}
