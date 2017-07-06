@@ -87,7 +87,7 @@ echo $u->pl('totaladmins', $nbAdmins);    	// Alias for getPlural
 
 ## More examples
 
-Feel free to download the zip file.
+Feel free to [download the zip file](https://github.com/damsmcfly/php-i18n-class/archive/master.zip).
 
 ## Inspiration
 
