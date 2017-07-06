@@ -10,7 +10,7 @@ if(isset($_GET['lang']) && in_array($_GET['lang'], $langList))
 else 
     $lang = 'en';
 
-// Define some varialbles for the getPlural (pl) method example
+// Define some varialbles we'll be using in the getPlural method example
 $nbUsers = 666;
 $nbAdmins = 1;
 
