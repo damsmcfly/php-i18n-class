@@ -69,8 +69,8 @@ echo $l->ph('welcomemsg');         // Alias for getPhrase
 The dot syntax helps you reach the JSON child node easily, if needed.
 ```php
 <?php
-echo $l->ph('menu.home');          // Alias for getPhrase
-// will both print : 'Homepage';
+echo $l->ph('menu.home'); 
+// will print : 'Homepage';
 ```
 
 **getPlural : Get the pluralized translation of your phrase from its key**
@@ -83,8 +83,8 @@ echo $u->pl('totalusers', $nbUsers);          // Alias for getPlural
 
 
 $nbAdmins = 1;
-echo $u->getPlural('totaladmins', $nbAdmins);   // Get pluralized translation
-echo $u->pl('totaladmins', $nbAdmins);    	// Alias for getPlural
+echo $u->getPlural('totaladmins', $nbAdmins);
+echo $u->pl('totaladmins', $nbAdmins);
 // will both print : 'There is 1 admin in the database.';
 ```
 
