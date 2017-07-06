@@ -46,22 +46,20 @@ The value may contain curly placeholders for variable parts.
 ## Using the class
 
 **Require the i18n Class**
-```
+```php
 <?php
 require 'src/i18n.class.php';
-?>
 ```
 **Define your language and create your i18n objects**
-```
+```php
 <?php
 $lang = 'en';
 $l = new i18n($lang, "layout/get");     // $l : translations of the Layout
 $u = new i18n($lang, "user/getList");   // $u : translations of the User List
-?>
 ```
 
 **Get the translated version of your phrase with getPhrase**
-```
+```php
 <?php
 // The dot syntax helps you reach the JSON child node easily, if needed.
 echo $l->getPhrase('menu.home');        // Get translated phrase from key
@@ -71,7 +69,7 @@ echo $l->ph('menu.home');               // Alias for getPhrase
 ```
 
 **Get the pluralized translated version of your phrase with getPlural**
-```
+```php
 <?php
 $nbUsers    = 666;
 echo $u->getPlural('totalusers', $nbUsers);    	// Get pluralized translated phrase from key
